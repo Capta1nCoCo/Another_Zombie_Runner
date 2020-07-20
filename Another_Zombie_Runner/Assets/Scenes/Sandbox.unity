@@ -527,6 +527,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2726709670460956137, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: FPCamera
+      value: 
+      objectReference: {fileID: 1500777802}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
 --- !u!4 &393423836 stripped
@@ -2689,6 +2693,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 93e86b57e56570d46814839867bf9a52, type: 3}
   m_PrefabInstance: {fileID: 1329743849}
   m_PrefabAsset: {fileID: 0}
+--- !u!20 &1500777802 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2000000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+  m_PrefabInstance: {fileID: 331100123}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1516457606
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3957,22 +3966,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4892976843848639634, guid: 51f342a1fb75a2d4f8cd62db2a2bcef2, type: 3}
-      propertyPath: m_StoppingDistance
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 4892976843848639635, guid: 51f342a1fb75a2d4f8cd62db2a2bcef2, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 141584326}
-    - target: {fileID: 4892976843848639635, guid: 51f342a1fb75a2d4f8cd62db2a2bcef2, type: 3}
-      propertyPath: chaseRange
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4892976843848639635, guid: 51f342a1fb75a2d4f8cd62db2a2bcef2, type: 3}
-      propertyPath: attackRange
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 4892976843848639636, guid: 51f342a1fb75a2d4f8cd62db2a2bcef2, type: 3}
       propertyPath: m_Name
       value: Enemy
