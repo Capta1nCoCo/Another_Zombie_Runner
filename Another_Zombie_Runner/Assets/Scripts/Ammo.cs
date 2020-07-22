@@ -13,13 +13,25 @@ public class Ammo : MonoBehaviour
         public int ammoAmount;
     }
 
-    //public int ReturnAmmo()
-    //{
-    //    return ammoAmount;
-    //}
+    public int ReturnAmmo(AmmoType ammoType)
+    {
+        return GetAmmoSlot(ammoType).ammoAmount;
+    }
 
-    //public void ReduceAmmo()
-    //{
-    //    ammoAmount--;
-    //}
+    public void ReduceAmmo(AmmoType ammoType)
+    {
+        GetAmmoSlot(ammoType).ammoAmount--;
+    }
+
+    private AmmoSlot GetAmmoSlot(AmmoType ammoType)
+    {
+        foreach (AmmoSlot slot in ammoSlots)
+        {
+            if (slot.ammoType == ammoType)
+            {
+                return slot;
+            }
+        }
+        return null;
+    }
 }
