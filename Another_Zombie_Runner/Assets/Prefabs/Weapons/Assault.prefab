@@ -93,13 +93,14 @@ GameObject:
   - component: {fileID: 72590564451920722}
   - component: {fileID: 72590564450822546}
   - component: {fileID: 2183331997636878747}
+  - component: {fileID: 4630818965628860056}
   m_Layer: 0
   m_Name: Assault
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &72590564449053554
 Transform:
   m_ObjectHideFlags: 0
@@ -182,11 +183,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FPCamera: {fileID: 0}
-  range: 100
+  range: 50
   damage: 30
+  timeBetweenShots: 0.2
   muzzleFlash: {fileID: 361978181825585153}
   hitEffect: {fileID: 2182268420626327232, guid: f7c69dd9db4c84644820debc03b5ef5c, type: 3}
   ammoSlot: {fileID: 0}
+--- !u!114 &4630818965628860056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72590564448565074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3c2f2a635487594e84bb9f00e1c0682, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoomIn: 20
+  zoomOut: 60
+  zoomInSens: 0.5
+  zoomOutSens: 2
 --- !u!1 &72590564448565076
 GameObject:
   m_ObjectHideFlags: 0

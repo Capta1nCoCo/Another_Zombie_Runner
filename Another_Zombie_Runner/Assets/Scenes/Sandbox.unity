@@ -3941,6 +3941,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93e86b57e56570d46814839867bf9a52, type: 3}
+--- !u!1 &1589655360 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4234405001926322967, guid: f3189f36876deaf48922acf48aee3eef, type: 3}
+  m_PrefabInstance: {fileID: 4748216750243575391}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1589655362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589655360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ca6d2929f8a8484096cf7967238f99e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentWeapon: 0
 --- !u!4 &1632031244 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 93e86b57e56570d46814839867bf9a52, type: 3}
@@ -5376,7 +5394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2644217963933469151, guid: f3189f36876deaf48922acf48aee3eef, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4713736346512749191, guid: f3189f36876deaf48922acf48aee3eef, type: 3}
       propertyPath: gameOverCanvas

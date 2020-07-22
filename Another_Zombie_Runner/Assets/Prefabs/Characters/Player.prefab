@@ -27,8 +27,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2644217963933177079}
   - {fileID: 4749735647634841171}
+  - {fileID: 2644217963933177079}
   - {fileID: 7028985879565347556}
   m_Father: {fileID: 4748216750488273670}
   m_RootOrder: 0
@@ -49,7 +49,6 @@ GameObject:
   - component: {fileID: 5826940647018459748}
   - component: {fileID: 4713736346512749191}
   - component: {fileID: 6178998703526957972}
-  - component: {fileID: 735312}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -365,22 +364,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ammoAmount: 10
---- !u!114 &735312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4748216750488575780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3c2f2a635487594e84bb9f00e1c0682, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zoomIn: 20
-  zoomOut: 60
-  zoomInSens: 0.5
-  zoomOutSens: 2
 --- !u!1 &4748216750488575782
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,7 +498,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2660124371781658831, guid: d19f906dbfb5d7e43863f959aefe496b, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2660124371781658831, guid: d19f906dbfb5d7e43863f959aefe496b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -655,7 +638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4479334701436790261, guid: 659a47354ddfd0342b21afc3d82d628b, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4479334701436790261, guid: 659a47354ddfd0342b21afc3d82d628b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
