@@ -10,13 +10,12 @@ public class Weapon : MonoBehaviour
     [SerializeField] float range = 100f;
     [SerializeField] float damage = 60f;
     [SerializeField] float timeBetweenShots = 1f;
+    [SerializeField] float weaponSwitchDelay = 0.75f;
     [SerializeField] ParticleSystem muzzleFlash;
     [SerializeField] GameObject hitEffect;
     [SerializeField] Ammo ammoSlot;
     [SerializeField] AmmoType ammoType;
-    
-    float weaponSwitchDelay = 0.75f;    
-
+       
     bool canShoot = true;
 
     private void OnEnable()
