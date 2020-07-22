@@ -40,7 +40,7 @@ public class Weapon : MonoBehaviour
 
     private void Shoot()
     {
-        if (ammoSlot.ReturnAmmo(ammoType) > 0 && canShoot)
+        if (ammoSlot.GetCurrentAmmo(ammoType) > 0 && canShoot)
         {
             ammoSlot.ReduceAmmo(ammoType);
             PlayMuzzleFlash();
