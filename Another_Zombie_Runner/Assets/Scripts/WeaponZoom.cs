@@ -13,6 +13,11 @@ public class WeaponZoom : MonoBehaviour
     Camera cameraChild;
     FirstPersonController fpc;
 
+    private void OnDisable()
+    {
+        ZoomOut();
+    }
+
     void Start()
     {
         cameraChild = GetComponentInParent<Camera>();
@@ -21,21 +26,30 @@ public class WeaponZoom : MonoBehaviour
 
     void Update()
     {
-        ZoomInOut();
+        ProcessZoom();
     }
 
-    public void ZoomInOut()
+    public void ProcessZoom()
     {
         if (Input.GetButtonDown("Fire2"))
         {
-            cameraChild.fieldOfView = zoomIn;
-            fpc.ChangeMouseSensitivity(zoomInSens, zoomInSens);
+            ZoomIn();
         }
         else if (Input.GetButtonUp("Fire2"))
         {
-            cameraChild.fieldOfView = zoomOut;
-            fpc.ChangeMouseSensitivity(zoomOutSens, zoomOutSens);
+            ZoomOut();
         }
     }
 
+    private void ZoomOut()
+    {
+        cameraChild.fieldOfView = zoomOut;
+        fpc.ChangeMouseSensitivity(zoomOutSens, zoomOutSens);
+    }
+
+    private void ZoomIn()
+    {
+        cameraChild.fieldOfView = zoomIn;
+        fpc.ChangeMouseSensitivity(zoomInSens, zoomInSens);
+    }
 }

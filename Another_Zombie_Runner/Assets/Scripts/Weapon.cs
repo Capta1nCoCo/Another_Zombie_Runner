@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class Weapon : MonoBehaviour
 {
@@ -13,7 +14,8 @@ public class Weapon : MonoBehaviour
     [SerializeField] GameObject hitEffect;
     [SerializeField] Ammo ammoSlot;
     [SerializeField] AmmoType ammoType;
-    float weaponSwitchDelay = 0.75f;
+    
+    float weaponSwitchDelay = 0.75f;    
 
     bool canShoot = true;
 
