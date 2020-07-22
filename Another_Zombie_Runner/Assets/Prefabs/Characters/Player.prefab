@@ -63,6 +63,8 @@ GameObject:
   - component: {fileID: 4748216750482572996}
   - component: {fileID: 5826940647018459748}
   - component: {fileID: 4713736346512749191}
+  - component: {fileID: 6178998703526957972}
+  - component: {fileID: 735312}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -364,6 +366,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a29e1b4a70048b4e99214547391a1b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverCanvas: {fileID: 0}
+--- !u!114 &6178998703526957972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4748216750488575780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313a934f7eda6a04699e3ba6a7173ca8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoAmount: 10
+--- !u!114 &735312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4748216750488575780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3c2f2a635487594e84bb9f00e1c0682, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoomIn: 20
+  zoomOut: 60
+  zoomInSens: 0.5
+  zoomOutSens: 2
 --- !u!1 &4748216750488575782
 GameObject:
   m_ObjectHideFlags: 0
