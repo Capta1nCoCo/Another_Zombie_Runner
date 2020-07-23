@@ -459,10 +459,12 @@ MonoBehaviour:
   FPCamera: {fileID: 0}
   range: 25
   damage: 20
-  timeBetweenShots: 0.4
+  timeBetweenShots: 0.3
+  weaponSwitchDelay: 0.75
   muzzleFlash: {fileID: 7173474634096616933}
   hitEffect: {fileID: 2182268420626327232, guid: f7c69dd9db4c84644820debc03b5ef5c, type: 3}
   ammoSlot: {fileID: 0}
+  ammoType: 0
 --- !u!1 &4477696603511184919
 GameObject:
   m_ObjectHideFlags: 0
