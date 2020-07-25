@@ -11,9 +11,12 @@ public class BatteryPickup : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        flashlightSystem = FindObjectOfType<FlashlightSystem>();
-        flashlightSystem.RestoreLightAngle(restoreAngle);
-        flashlightSystem.RestoreLightIntensity(intensityAmount);
-        Destroy(gameObject);
+        if (other.gameObject.tag == "Player")
+        {
+            flashlightSystem = FindObjectOfType<FlashlightSystem>();
+            flashlightSystem.RestoreLightAngle(restoreAngle);
+            flashlightSystem.AddLightIntensity(intensityAmount);
+            Destroy(gameObject);
+        }        
     }
 }
