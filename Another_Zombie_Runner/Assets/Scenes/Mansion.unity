@@ -376,7 +376,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!64 &9459971
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -390,7 +390,7 @@ MeshCollider:
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 1587160913}
 --- !u!33 &9459972
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -17121,7 +17121,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh16030
+  m_Name: pb_Mesh16034
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
