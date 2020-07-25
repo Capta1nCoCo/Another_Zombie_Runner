@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
+using TMPro;
 using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
 
@@ -15,6 +17,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] GameObject hitEffect;
     [SerializeField] Ammo ammoSlot;
     [SerializeField] AmmoType ammoType;
+    [SerializeField] TextMeshProUGUI ammoText;
        
     bool canShoot = true;
 
@@ -25,10 +28,16 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
+        DisplayAmmo();
         if (Input.GetButtonDown("Fire1"))
         {
             Shoot();            
         }
+    }
+
+    private void DisplayAmmo()
+    {        
+        ammoText.text = ammoSlot.GetCurrentAmmo(ammoType).ToString();
     }
 
     IEnumerator ShootDelay(float delay)
