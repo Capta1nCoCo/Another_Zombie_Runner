@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class DisplayDamage : MonoBehaviour
 {
-    
+    [SerializeField] Canvas impactCanvas;
+    [SerializeField] float impactTime = 0.3f;
+
+    private void Start()
+    {
+        impactCanvas.enabled = false;
+    }
     public void DisplayDamageCanvas()
     {
         StartCoroutine(ProcessDisplayDamage());
@@ -12,8 +18,8 @@ public class DisplayDamage : MonoBehaviour
 
     IEnumerator ProcessDisplayDamage()
     {
-        enabled = true;
-        yield return new WaitForSeconds(.3f);
-        enabled = false;
+        impactCanvas.enabled = true;
+        yield return new WaitForSeconds(impactTime);
+        impactCanvas.enabled = false;
     }
 }

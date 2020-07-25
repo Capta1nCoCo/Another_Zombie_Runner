@@ -22,7 +22,6 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        displayDamage.DisplayDamageCanvas();
         health -= damage;
         if (health <= 0)
         {
